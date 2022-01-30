@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<style>
+	textarea {
+		resize: none;
+        width: 100%;
+	}
+	</style>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>ashnet</title>
+  </head>
+  <body>
+    <h1>welcome to ashnet</h1>
+	<div class="main">
+		<textarea readonly id="messages", rows="10", cols="20"></textarea>
+    </div>
+    <div class="main">
+		<textarea id="console", rows="10", cols="20"></textarea>
+		<button id="submit", type="submit">SUBMIT</button>
+	</div>
+	<script src="./send.js"></script>
+  </body>
+</html>
+
