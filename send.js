@@ -27,5 +27,5 @@ btn.addEventListener('click', () => {
 })
 
 ipc.on('msg_recvd', (event, arg) => {
-	msg.value = arg
+    msg.append(arg)
 })

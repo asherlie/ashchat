@@ -40,6 +40,6 @@ ipc.on('msg_submission', (event, arg) => {
 
 svq_out.on('data', (data) => {
     //ipc.send('msg_recvd', data)
-    win.webContents.send('msg_recvd', data.toString())
+    win.webContents.send('msg_recvd', data.toString()+'\r\n')
 	//console.log('queue: ' + data)
 })
