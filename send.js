@@ -28,4 +28,5 @@ btn.addEventListener('click', () => {
 
 ipc.on('msg_recvd', (event, arg) => {
     msg.append(arg)
+    msg.scrollTop = msg.scrollHeight
 })
